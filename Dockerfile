@@ -17,7 +17,7 @@ ARG VERSION=0.0.1
 VOLUME /tmp
 
 # Add the service as app.jar
-ADD target/demo-${VERSION}.jar app.jar
+ADD project/demo/target/demo-${VERSION}.jar app.jar
 
 # touch the archive for timestamp
 RUN sh -c 'touch /app.jar'
